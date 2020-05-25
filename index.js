@@ -14,7 +14,7 @@ catButton.addEventListener("click", evt => {
         .then(res => res.json())
         .then(kitty => {
             console.log(kitty);
-            catDiv.innerHTML += `
+            catDiv.innerHTML = `
             <p> Here is a nice kitty </p>
             <img src=${kitty[0].url} height="250" width="250">`;
         });
